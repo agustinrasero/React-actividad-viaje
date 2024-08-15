@@ -1,13 +1,243 @@
-body {
+nav{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 16px;
+}
+a{
+  color: white;
+  font-size: 0.8em;
+  text-decoration: none;
+  padding-right: 30px;
+}
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.active{
+  color: gold;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.login-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Altura completa de la pantalla */
 }
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  width: 300px; /* Ancho del contenedor */
+  height: 300px; /* Altura del contenedor */
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto; /* Centra el contenedor en la página */
+}
+
+.login h3, .login p {
+  margin: 10px 0; /* Añade margen entre los elementos */
+}
+
+.login input {
+  margin-bottom: 20px; /* Añade espacio entre el input y el botón */
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box; /* Asegura que el padding no expanda el ancho */
+}
+
+.login button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.zonas {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  
+}
+
+/* Efecto hover */
+.zonas:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del título */
+.zonas h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #555;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que desborda el contenedor */
+  text-overflow: ellipsis; /* Añade puntos suspensivos cuando el texto es truncado */
+}
+
+/* Estilo del párrafo */
+.zonas p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #777;
+}
+
+/* Estilo de las imágenes */
+.zonas img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Estilo del botón */
+.link {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.zonas button:hover {
+  background-color: #0056b3;
+}
+
+/* Contenedor general para alinear las zonas */
+.lugar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.volver{
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.informacion {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  max-width: 800px;
+
+  /* Centrando el contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Para centrar en toda la pantalla */
+  height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+  margin: 0 auto;
+}
+
+.informacion img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.informacion h3, .informacion h4, .informacion h5 {
+  text-align: center;
+}
+
+.informacion button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+}
+
+.informacion button:hover {
+  background-color: #0056b3;
+}
+
+.botones {
+  display: flex;
+  gap: 10px; /* Espacio entre los botones */
+}
+
+.lista{
+  display: flex;
+  gap: 20px;
+  width: 500%;
+  height: 5%;
+  padding: 5px 5px;
+  
+ 
+}
+.lista h4{
+  margin: 0;
+
+ 
+}
+
+.lista button{
+ display: flex;
+ height: 18px;
+ color: white;
+ background-color: red;
+ border: none;
+ 
+}
+
+.ruta{
+  padding: 5px 5px;
+}
+
+.circulo{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+  display: inline-block;
+}
+
+.link-circ{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
